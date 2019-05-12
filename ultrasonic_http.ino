@@ -1,7 +1,7 @@
 /*
   
  * Description:  Distance measurement using ultrasonic HC-SR04 and ESP32 connected to AskSensors
- *  Author: https://asksensors.com, 2018
+ *  Author: https://asksensors.com, 2018 - 2019
  *  github: https://github.com/asksensors
  */
  
@@ -21,8 +21,8 @@ const char* ssid     = "............."; //Wifi SSID
 const char* password = "............."; //Wifi Password
 String apiKeyIn = "............."; // API Key
 const unsigned int writeInterval = 25000; // write interval (in ms)
-
-const char* host = "api.asksensors.com";  // host
+// ASKSENSORS API host config
+const char* host = "api.asksensors.com";  // API host name
 const int httpPort = 80;      // port
   
 void setup(){
