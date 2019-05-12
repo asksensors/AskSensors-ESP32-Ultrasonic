@@ -20,6 +20,7 @@ HTTPClient ask;
 const char* ssid     = "............."; //Wifi SSID
 const char* password = "............."; //Wifi Password
 String apiKeyIn = "............."; // API Key
+const unsigned int writeInterval = 25000; // write interval (in ms)
 
 const char* host = "api.asksensors.com";  // host
 const int httpPort = 80;      // port
@@ -105,5 +106,5 @@ void loop(){
 
   client.stop();  // stop client
   
-  delay(20000);    // delay
+  delay(writeInterval);    // delay
 }
