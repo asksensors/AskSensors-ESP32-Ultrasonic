@@ -21,7 +21,7 @@ const char* ssid     = "............."; //Wifi SSID
 const char* password = "............."; //Wifi Password
 String apiKeyIn = "............."; // API Key
 
-const char* host = "asksensors.com";  // host
+const char* host = "api.asksensors.com";  // host
 const int httpPort = 80;      // port
   
 void setup(){
@@ -75,7 +75,7 @@ void loop(){
   }else {
 
     // Create a URL for the request
-    String url = "https://asksensors.com/api.asksensors/write/";
+    String url = "https://api.asksensors.com/write/";
     url += apiKeyIn;
     url += "?module1=";
     url += distance;
